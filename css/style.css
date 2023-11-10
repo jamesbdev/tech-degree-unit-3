@@ -1,0 +1,10 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
