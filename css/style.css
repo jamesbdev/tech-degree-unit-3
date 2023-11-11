@@ -1,5 +1,31 @@
 body {
   font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+}
+
+main {
+  margin: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin: 0;
+  text-transform: uppercase;
+  padding: 1rem;
+
+}
+
+header {
+  background-color: blueviolet;
+  margin: 0;
 }
 
 fieldset {
@@ -8,3 +34,13 @@ fieldset {
   gap: 1rem;
 }
 
+footer p {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  main {
+    width: 60%;
+    margin: 0 auto;
+  }
+}

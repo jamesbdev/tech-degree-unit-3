@@ -17,8 +17,12 @@
     <h2>Sign up for our news letter</h2>
     <p>Get the latest news for how your code is doing in your inbox</p>
     <form>
-     <fieldset>
-        <legend>Contact Information</legend>
+    <fieldset>
+        <legend>
+            Contact Information
+        </legend>
+
+
         <label for="name">Full name</label>
         <input type="text" id="name" name="user_name" required>
         <label for="email">Email Address</label>
@@ -38,10 +42,41 @@
         </select>
         <label for="zip-code">Zip Code</label>
         <input type="text" id="zip-code" name="user_zip_code">
-     </fieldset>
+    </fieldset>
+   <fieldset>
+    <legend>Newsletter</legend>
+
+     <p>Select the newsletters you would like to receive</p>
+     <div>
+        <input type="checkbox" id="html_news" name="html_news">
+        <label for="html_news">HTML News</label>
+     </div>
+     <div>
+        <input type="checkbox" id="css_news" name="css_news">
+        <label for="css_news">CSS News</label>
+   </div>
+   <div>
+    <input type="checkbox" id="javascript" name="js_news">
+    <label for="js">JavaScript News</label>
+</div>
+<p>Newsletter format</p>
+<div>
+    <input type="radio" id="html" name="format">
+    <label for="">HTML</label>
+</div>
+<div>
+    <input type="radio" id="plain_text" name="format">
+    <label for="plain_text">Plain Text</label>
+</div>
+<label for="other_topics">Topics you would like to hear about</label>
+
+<textarea name="other_topics" id="other_topics" cols="30" rows="10"></textarea>
+</fieldset>
+    <button type="submit">Sign Up</button>
     </form>
 </main>
 <footer>
+<p>Copyright The Code Review</p>
 
 </footer>
 </body>
