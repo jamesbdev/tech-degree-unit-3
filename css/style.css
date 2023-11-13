@@ -7,12 +7,12 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  border-top: 1px solid blue;
+  border-top: 1px solid #50556F;
   padding-top: 1rem;
 }
 
 main {
-  margin: 8px;
+  margin: 0 .8rem;
 }
 
 h1 {
@@ -44,6 +44,7 @@ fieldset {
 
 input::placeholder {
   text-align: right;
+  font-style: italic;
 }
 
 footer p {
@@ -52,6 +53,13 @@ footer p {
 
 .intro-message {
   text-align: center;
+  border-bottom: 4px solid #50556F;
+  padding-bottom: 1rem;
+  margin-bottom: .25rem;
+}
+
+.intro-message p {
+  color: #aaa;
 }
 
 fieldset legend {
@@ -61,9 +69,19 @@ fieldset legend {
   font-size: 1.2rem;
 }
 
+input[name="user_zip_code"] {
+  width: 50%;
+}
+
 .contact-information div {
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-information input, .contact-information select {
+  padding: .8rem 1rem;
+  background-color: #efefef;
 }
 
 @media (min-width: 768px) {
