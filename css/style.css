@@ -56,8 +56,14 @@ footer {
   padding-bottom: 5rem;
 }
 
+input, textarea, select {
+  border: none;
+  border-radius: 5px;
+}
 
-
+input:focus, select:focus, textarea:focus {
+  outline: 2px solid #50556F;
+}
 
 .intro-message {
   text-align: center;
@@ -118,10 +124,7 @@ button[type="submit"] {
   font-weight: 500;
 }
 
-input:focus, select:focus, textarea:focus {
-  border: 1px solid #50556F;
-  outline: 1px solid #50556F;
-}
+
 
 
 
