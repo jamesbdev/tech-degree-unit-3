@@ -64,10 +64,18 @@ footer {
 input, textarea, select {
   border: none;
   border-radius: 5px;
+  transition-property: background-color, box-shadow;
+  transition-duration: 1s;
+
 }
 
 input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
   outline: 2px solid #50556F;
+}
+
+input:focus, textarea:focus, select:focus {
+  background-color: #c8c8ca;
+  box-shadow: 3px 3px 5px #50556F;
 }
 
 .intro-message {
