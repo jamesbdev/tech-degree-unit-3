@@ -1,83 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tech degree unit 3 - Web form</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <h1>The code review</h1>
+      <h1>The code review</h1>
     </header>
-<main>
-    <h2>Sign up for our news letter</h2>
-    <p>Get the latest news for how your code is doing in your inbox</p>
-    <form>
-    <fieldset>
-        <legend>
-            Contact Information
-        </legend>
+    <main>
+      <section class="intro-message">
+        <h2>Sign up for our news letter</h2>
+        <p>Get the latest news for how your code is doing in your inbox</p>
+      </section>
 
+      <form>
+        <fieldset class="contact-information">
+          <legend>Contact Information</legend>
+          <div>
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="user_name" required placeholder="Required"/>
+          </div>
+          <div>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="user_email" required placeholder="Required" />
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="user_email" />
+          </div>
+          <div>
+            <label for="address">Street Address</label>
+            <input type="tel" id="address" name="user_email" />
+          </div>
+          <div>
+            <label for="city">City</label>
+            <input type="text" id="city" name="user_city" />
+          </div>
+           <div>
+            <label for="state">State</label>
+            <select name="user_state" id="state">
+              <option value="new_york">New York</option>
+              <option value="florida">Florida</option>
+              <option value="texas">Texas</option>
+              <option value="new_york">New York</option>
+            </select>
+           </div>
+          <div>
+            <label for="zip-code">Zip Code</label>
+            <input type="text" id="zip-code" name="user_zip_code" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Newsletter</legend>
 
-        <label for="name">Full name</label>
-        <input type="text" id="name" name="user_name" required>
-        <label for="email">Email Address</label>
-        <input type="email" id="email" name="user_email" required>
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="user_email">
-        <label for="address">Street Address</label>
-        <input type="tel" id="address" name="user_email">
-        <label for="city">City</label>
-        <input type="text" id="city" name="user_city">
-        <label for="state">State</label>
-        <select name="user_state" id="state">
-            <option value="new_york">New York</option>
-            <option value="florida">Florida</option>
-            <option value="texas">Texas</option>
-            <option value="new_york">New York</option>
-        </select>
-        <label for="zip-code">Zip Code</label>
-        <input type="text" id="zip-code" name="user_zip_code">
-    </fieldset>
-   <fieldset>
-    <legend>Newsletter</legend>
+          <p>Select the newsletters you would like to receive</p>
+          <div>
+            <input type="checkbox" id="html_news" name="news" />
+            <label for="html_news">HTML News</label>
+          </div>
+          <div>
+            <input type="checkbox" id="css_news" name="news" />
+            <label for="css_news">CSS News</label>
+          </div>
+          <div>
+            <input type="checkbox" id="js_news" name="news" />
+            <label for="js_news">JavaScript News</label>
+          </div>
+          <p>Newsletter format</p>
+          <div>
+            <input type="radio" id="html" name="format" />
+            <label for="">HTML</label>
+          </div>
+          <div>
+            <input type="radio" id="plain_text" name="format" />
+            <label for="plain_text">Plain Text</label>
+          </div>
+          <label for="other_topics">Topics you would like to hear about</label>
 
-     <p>Select the newsletters you would like to receive</p>
-     <div>
-        <input type="checkbox" id="html_news" name="html_news">
-        <label for="html_news">HTML News</label>
-     </div>
-     <div>
-        <input type="checkbox" id="css_news" name="css_news">
-        <label for="css_news">CSS News</label>
-   </div>
-   <div>
-    <input type="checkbox" id="javascript" name="js_news">
-    <label for="js">JavaScript News</label>
-</div>
-<p>Newsletter format</p>
-<div>
-    <input type="radio" id="html" name="format">
-    <label for="">HTML</label>
-</div>
-<div>
-    <input type="radio" id="plain_text" name="format">
-    <label for="plain_text">Plain Text</label>
-</div>
-<label for="other_topics">Topics you would like to hear about</label>
-
-<textarea name="other_topics" id="other_topics" cols="30" rows="10"></textarea>
-</fieldset>
-    <button type="submit">Sign Up</button>
-    </form>
-</main>
-<footer>
-<p>Copyright The Code Review</p>
-
-</footer>
-</body>
+          <textarea
+            name="other_topics"
+            id="other_topics"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </fieldset>
+        <button type="submit">Sign Up</button>
+      </form>
+    </main>
+    <footer>
+      <p>Copyright The Code Review</p>
+    </footer>
+  </body>
 </html>

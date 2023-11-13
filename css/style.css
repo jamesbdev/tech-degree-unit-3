@@ -7,7 +7,8 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-
+  border-top: 1px solid blue;
+  padding-top: 1rem;
 }
 
 main {
@@ -23,8 +24,12 @@ h1 {
 
 }
 
+h2 {
+  color: #50556F;
+}
+
 header {
-  background-color: blueviolet;
+  background-color: #50556F;
   margin: 0;
 }
 
@@ -32,15 +37,51 @@ fieldset {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  border: none;
+  padding: 0;
+  margin-left: 0;
+}
+
+input::placeholder {
+  text-align: right;
 }
 
 footer p {
   text-align: center;
 }
 
+.intro-message {
+  text-align: center;
+}
+
+fieldset legend {
+  padding: 0;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.contact-information div {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 768px) {
   main {
     width: 60%;
     margin: 0 auto;
+  }
+
+  .contact-information div {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .contact-information div input {
+    flex: 1;
+  }
+
+  .contact-information div label {
+    flex-basis: 200px;
   }
 }
