@@ -84,6 +84,20 @@ input[name="user_zip_code"] {
   background-color: #efefef;
 }
 
+textarea {
+  background-color: #efefef;
+}
+
+button[type="submit"] {
+  padding: 1rem;
+  color: white;
+  border-radius: 5px;
+  background-color: #129aa8;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 @media (min-width: 768px) {
   main {
     width: 60%;
