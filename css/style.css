@@ -9,6 +9,7 @@ form {
   gap: 1rem;
   border-top: 1px solid #50556F;
   padding-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 main {
@@ -65,7 +66,7 @@ input, textarea, select {
   border-radius: 5px;
 }
 
-input:focus, select:focus, textarea:focus {
+input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
   outline: 2px solid #50556F;
 }
 
@@ -77,7 +78,7 @@ input:focus, select:focus, textarea:focus {
 }
 
 .intro-message p, footer p {
-  color: #aaa;
+  color: #fff;
   padding-top: .8rem;
 }
 
@@ -137,6 +138,11 @@ button[type="submit"] {
   font-size: 1.2rem;
   font-weight: 500;
   margin-top: 1.5rem;
+}
+
+footer {
+  background-color: #50556F;
+  
 }
 
 
