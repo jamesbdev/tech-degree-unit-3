@@ -24,7 +24,7 @@ h1 {
 
 }
 
-h2 {
+h2, label, legend {
   color: #50556F;
 }
 
@@ -49,7 +49,15 @@ input::placeholder {
 
 footer p {
   text-align: center;
+  font-style: italic;
 }
+
+footer {
+  padding-bottom: 5rem;
+}
+
+
+
 
 .intro-message {
   text-align: center;
@@ -58,13 +66,14 @@ footer p {
   margin-bottom: .25rem;
 }
 
-.intro-message p {
+.intro-message p, footer p {
   color: #aaa;
+  padding-top: .8rem;
 }
 
 fieldset legend {
   padding: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: .5rem;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -72,6 +81,13 @@ fieldset legend {
 input[name="user_zip_code"] {
   width: 50%;
 }
+
+.contact-information {
+  border-bottom: 2px solid #000;
+  padding-bottom: 2rem;
+}
+
+
 
 .contact-information div {
   display: flex;
@@ -84,6 +100,10 @@ input[name="user_zip_code"] {
   background-color: #efefef;
 }
 
+.newsletter p {
+  margin: 0;
+}
+
 textarea {
   background-color: #efefef;
 }
@@ -92,11 +112,18 @@ button[type="submit"] {
   padding: 1rem;
   color: white;
   border-radius: 5px;
-  background-color: #129aa8;
+  background-color: #30a5b3;
   border: none;
   font-size: 1.2rem;
   font-weight: 500;
 }
+
+input:focus, select:focus, textarea:focus {
+  border: 1px solid #50556F;
+  outline: 1px solid #50556F;
+}
+
+
 
 @media (min-width: 768px) {
   main {
