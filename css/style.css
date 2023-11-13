@@ -28,6 +28,10 @@ h2, label, legend {
   color: #50556F;
 }
 
+h2 {
+  margin-bottom: 0;
+}
+
 header {
   background-color: #50556F;
   margin: 0;
@@ -77,15 +81,20 @@ input:focus, select:focus, textarea:focus {
   padding-top: .8rem;
 }
 
+.intro-message p {
+  margin-top: 0;
+  padding-top: .5rem;
+}
+
 fieldset legend {
   padding: 0;
-  margin-bottom: .5rem;
+  margin-bottom: 1.2rem;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
 input[name="user_zip_code"] {
-  width: 50%;
+  width: 41%;
 }
 
 .contact-information {
@@ -112,6 +121,7 @@ input[name="user_zip_code"] {
 
 textarea {
   background-color: #efefef;
+  padding: 0.5rem;
 }
 
 button[type="submit"] {
@@ -125,9 +135,6 @@ button[type="submit"] {
 }
 
 
-
-
-
 @media (min-width: 768px) {
   main {
     width: 60%;
@@ -137,13 +144,24 @@ button[type="submit"] {
   .contact-information div {
     flex-direction: row;
     gap: 1rem;
+    align-items: center;
   }
 
-  .contact-information div input {
+  .contact-information div input, .contact-information div select {
     flex: 1;
   }
 
   .contact-information div label {
     flex-basis: 200px;
+  }
+
+  input[name="user_zip_code"] {
+    max-width: 25%;
+  }
+}
+
+@media (min-width: 990px) {
+  main {
+    width: 45%;
   }
 }
