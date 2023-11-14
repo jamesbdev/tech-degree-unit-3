@@ -192,7 +192,6 @@ footer {
   input[name="user_zip_code"] {
     flex-basis: 85px;
     width: 100%;
-    flex-grow: 30%;
   }
 }
 
