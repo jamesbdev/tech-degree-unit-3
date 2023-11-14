@@ -118,7 +118,7 @@ input[name="user_zip_code"] {
 
 .contact-information {
   border-bottom: 2px solid #000;
-  padding-bottom: 2rem;
+  padding-bottom: 2.5rem;
 }
 
 .contact-information div {
@@ -133,7 +133,7 @@ input[name="user_zip_code"] {
 }
 
 .newsletter p {
-  margin: 0 0 1rem;
+  margin: 0 0 .5rem;
 }
 
 .newsletter p:nth-of-type(2) {
