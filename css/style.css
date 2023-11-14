@@ -113,7 +113,7 @@ fieldset legend {
 }
 
 input[name="user_zip_code"] {
-  width: 41%;
+  width: 44%;
 }
 
 .contact-information {
@@ -180,7 +180,8 @@ footer {
     align-items: center;
   }
 
-  .contact-information div input, .contact-information div select {
+  .contact-information div input:not(input[name="user_zip_code"]), 
+  .contact-information div select {
     flex: 1;
   }
 
@@ -189,7 +190,8 @@ footer {
   }
 
   input[name="user_zip_code"] {
-    max-width: 25%;
+    flex-basis: 100px;
+    width: 100%;
   }
 }
 
