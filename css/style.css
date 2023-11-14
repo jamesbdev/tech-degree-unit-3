@@ -41,7 +41,7 @@ header {
 fieldset {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: .5rem;
   border: none;
   padding: 0;
   margin-left: 0;
@@ -66,16 +66,27 @@ input, textarea, select {
   border-radius: 5px;
   transition-property: background-color, box-shadow;
   transition-duration: 1s;
-
+  transition-timing-function: ease-in;
 }
 
-input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, select:focus, textarea:focus {
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+input[type="tel"]:focus, 
+select:focus, 
+textarea:focus {
   outline: 2px solid #50556F;
 }
 
-input:focus, textarea:focus, select:focus {
+.contact-information input:focus, 
+.contact-information input:focus, 
+.contact-information select:focus,
+textarea:focus {
   background-color: #c8c8ca;
   box-shadow: 3px 3px 5px #50556F;
+}
+
+select option {
+  color: #fff;
 }
 
 .intro-message {
@@ -111,8 +122,6 @@ input[name="user_zip_code"] {
   padding-bottom: 2rem;
 }
 
-
-
 .contact-information div {
   display: flex;
   flex-direction: column;
@@ -125,7 +134,11 @@ input[name="user_zip_code"] {
 }
 
 .newsletter p {
-  margin: 0;
+  margin: 0 0 1rem;
+}
+
+.newsletter p:nth-of-type(2) {
+  margin-top: 1rem;
 }
 
 textarea {
@@ -135,6 +148,7 @@ textarea {
 
 label[for="other_topics"] {
   margin-top: 1rem;
+  margin-bottom: .5rem;
 }
 
 button[type="submit"] {
